@@ -1,0 +1,126 @@
+.card {
+  margin-top: 50px;
+  width: 310px;
+  height: 310px;
+  margin-right: 60px;
+  margin-left: 0px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid var(--hero-bg);
+}
+
+.card::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  border-radius: 50%;
+  border: 35px solid rgba(64, 18, 192, 0.102);
+  transition: all .8s ease;
+  filter: blur(.5rem);
+}
+
+.text {
+  padding: 15px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.description{
+  padding: 0 15px;
+  color: white;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  width: 84px;
+  height: 35px;
+  background-color: rgb(200, 215, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  stroke: rgb(38, 59, 126);
+}
+
+.btn:hover {
+  background-color: rgb(200, 215, 255);
+}
+
+.card:hover::before {
+  width: 140px;
+  height: 140px;
+  top: -30%;
+  left: 50%;
+  filter: blur(0rem);
+}
+
+.card-content {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-button {
+  background-color: var(--primary-color);
+  color: white;
+  justify-items: center;
+  align-items: center;
+  padding: 5px 33px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 8PX 8PX 0;
+}
+.reports-btn{
+  background-color: var(--primary-color);
+  color: white;
+  justify-items: center;
+  align-items: center;
+  padding: 5px 40px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  margin: 0 0PX 8PX 8px;
+}
+
+
+
+.cubutton {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 0px;
+  margin-right: 60px;
+  position: absolute;
+  bottom: -20%;
+  right: 40%;
+}
